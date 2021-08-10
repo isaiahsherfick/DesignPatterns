@@ -1,0 +1,40 @@
+	
+
+				The Strategy Pattern
+
+  ----------------------------------------------------------------------------
+
+	Put simply, the strategy pattern is a way to favor composition
+	over inheritance in order to make code reuse more efficient and
+	scaleable. 
+
+	The short of it is that one needs to abstract away algorithms and
+	encapsulate them so as to make them interchangeable without any
+	work being done by the client. Objects are created which represent
+	various strategies whose behavior is unique. The strategy object
+	is what controls the behavior of this algorithm, and the client
+	object simply contains a strategy object. 
+
+	A simple example that doesn't really have much actual application
+	but nonetheless gets the point across is a class hierarchy that
+	needs to implement different sort algorithms. The parent class
+	uses bubble sort, child A uses quick, child B uses selection sort.
+	Child C inherits from A, D from B. C uses selection, and B uses
+	bubble again. This quickly becomes a confusing mess of code reuse,
+	with lots of completely identical code shared across classes and
+	no way to know the behavior of a sort method.
+
+	The remedy is to create a has-a relationship from the parent class
+	to a ISort interface. This interface is implemented by various
+	other classes, such as QuickSortStrategy, BubbleSortStrategy, and
+	SelectionSortStrategy. Now, the parent class's implementationn of
+	sort simply calls its ISort object's sort() method. It is now
+	trivial for each child to use its desired sort algorithm, as they
+	need only to instantiate the appropriate strategy object during
+	their own instantiation.
+
+	This pattern should be used when an inheritance tree has any
+	shared behavior going horizontally across the tree, or may ever in
+	the future. As long as behavior is only shared vertically, this
+	pattern does not need to be employed.
+	
