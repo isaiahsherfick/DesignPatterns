@@ -1,0 +1,26 @@
+
+	
+
+				The Observer Pattern
+
+  ----------------------------------------------------------------------------
+
+	The observer pattern comes up when you have at least two objects,
+	one of which has an internal state change that the other one needs
+	to know about. These are referred to as the observable and the
+	observer respectively. There can be more than one observer, so
+	this is inherantly a one-to-many relationship between the
+	observable and the observer. 
+
+	The wrong approach is to have the observers constantly polling the
+	observable to detect changes. This is not only extremely
+	inefficient, it also may receive the changes late depending on the
+	poll rate. Also note that this scales horiffically. 
+
+	Instead, the observable needs to push its changes to its observers
+	when they are made. First, the observable needs to be able to
+	register observers (This requires some kind of data structure to
+	store them). It should also be able to remove them. Then, all it
+	needs is a notify method to let the observers know that a change
+	has occurred. The observers will then have an update method which
+	the observable calls whenever a change occurs. 
