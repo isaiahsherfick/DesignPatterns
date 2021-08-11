@@ -25,7 +25,7 @@
 	no way to know the behavior of a sort method.
 
 	The remedy is to create a has-a relationship from the parent class
-	to a ISort interface. This interface is implemented by various
+	to an ISort interface. This interface is implemented by various
 	other classes, such as QuickSortStrategy, BubbleSortStrategy, and
 	SelectionSortStrategy. Now, the parent class's implementationn of
 	sort simply calls its ISort object's sort() method. It is now

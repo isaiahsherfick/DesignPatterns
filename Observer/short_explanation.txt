@@ -15,7 +15,7 @@
 	The wrong approach is to have the observers constantly polling the
 	observable to detect changes. This is not only extremely
 	inefficient, it also may receive the changes late depending on the
-	poll rate. Also note that this scales horiffically. 
+	poll rate. Also note that this scales horriffically. 
 
 	Instead, the observable needs to push its changes to its observers
 	when they are made. First, the observable needs to be able to
