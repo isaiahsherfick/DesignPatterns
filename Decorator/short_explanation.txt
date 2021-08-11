@@ -1,0 +1,19 @@
+
+	
+
+				The Decorator Pattern
+
+  ----------------------------------------------------------------------------
+
+	The decorator pattern is useful when you want to modify the behavior of
+	an existing piece of code at runtime instead of altering the actual
+	code. Essentially you wrap the object you want to modify with
+	a decorator. This can happen many many times, so you can wrap
+	decorators within decorators within other decorators. This is a useful
+	way to have different permutations of objects without having a bunch of
+	duplicate and oft-modified code. 
+
+	The decorator pattern attaches additional responsibilities to an object
+	dynamically. This serves as a flexible alternative to subclassing. This
+	is yet another way to utilize composition instead of inheritance to
+	share behavior. 
