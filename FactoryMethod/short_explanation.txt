@@ -1,0 +1,22 @@
+	
+
+		   	    The Factory Method Pattern
+
+  ----------------------------------------------------------------------------
+
+	The factory method pattern is a way to encapsulate instantiation
+	and abstract away the "new" keyword to a class. While it can be
+	a bit non-obvious what the benefits of this pattern are
+	immediately, there are actually many. For one, consider that
+	instantiation of our objects may require a lot of computation and
+	steps which we would like to not worry about. Maybe an API call
+	has to happen and a few methods need to be run in order to obtain
+	the parameters that must be passed to the constructor. A factory
+	class can encapsulate this within a single method call. 
+
+	Other advantages of this pattern include polymorphism. Maybe you
+	don't know which specific child class you need to instantiate at
+	runtime, but your factory class can determine this and pump out
+	the correct one. 
+
+	It's a very simple idea with powerful advantages. 
