@@ -2,7 +2,15 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.ArrayList;
 public class MusicianFactory
 {
-	private boolean trumpeter,guitarist,bassist,saxophonist,pianist = false;
+	private boolean trumpeter,guitarist,bassist,saxophonist,pianist;
+	public MusicianFactory()
+	{
+		this.trumpeter = false;
+		this.guitarist = false;
+		this.bassist = false;
+		this.saxophonist = false;
+		this.pianist = false;
+	}
 	public Musician randomMusician()
 	{
 		while(true)
