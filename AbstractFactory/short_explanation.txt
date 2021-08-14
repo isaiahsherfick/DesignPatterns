@@ -1,0 +1,10 @@
+	
+
+		   	  The Abstract Factory Pattern
+
+  ----------------------------------------------------------------------------
+
+	An Abstract Factory can be thought of as the "next level" of
+	abstraction from the Factory Method pattern. Very simply, an
+	abstract factory has multiple factory methods that can instantiate
+	related or dependent objects.
