@@ -1,0 +1,18 @@
+
+	
+
+				The Command Pattern
+
+  ----------------------------------------------------------------------------
+
+	The command pattern encapsulates a request as an object thereby
+	letting you parameterize other objects with different requests,
+	queue/log requests, and support undoable operations.
+
+	We're encapsulating a request, which will allow us a lot of
+	control over the system we're creating.
+
+	This pattern can be combined with the composite pattern so that
+	commands can be themselves a collection of other commands. For
+	example, the "cut" command may be a "copy" and "delete" command
+	executed as one command. 

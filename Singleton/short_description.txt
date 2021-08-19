@@ -1,0 +1,28 @@
+	
+
+				The Singleton Pattern
+
+  ----------------------------------------------------------------------------
+
+	The singleton pattern ensures a class has only one instance and
+	provides a global point of access to it. Many people consider this
+	pattern to be a "code smell," (you should never use it). However,
+	it is a recognized design pattern and you should be aware of it.
+	The point of it is that for some reason you may want one atomic
+	instance of a class and you want assurance that it will never ever
+	be able to create another one. 
+
+	A few reasons that this pattern is undesirable is that the
+	singleton pattern involves global access. Global access is rarely
+	if ever a good thing, as it's much harder to ensure that this
+	object is only undergoing desired changes once its in the global
+	namespace. The other issue is that the idea that there is only
+	ever going to be a need for one instance of a class is inherantly
+	an assumption that you're making. As your requirements change and
+	time passes, you might just need to make more than one. 
+
+	"One man's constant is another man's variable."
+
+	Nonetheless, to achieve this, you simply make the constructor of
+	the class private. Now you need to use static methods to
+	instantiate the singleton instance.
